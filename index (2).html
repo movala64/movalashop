@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manualidades MOVALA</title>
+<meta name="description" content="Piezas artesanales hechas a mano. Encarga la tuya por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== CABECERA ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-word" id="shopName">MOVALA</span>
+        <span class="logo-sub">Manualidades artesanales</span>
+      </a>
+      <nav class="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-whatsapp btn-small" id="headerWhatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" class="icon-wa"><path fill="currentColor" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.697 4.61 1.902 6.484L4 29l7.72-1.868A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.8a9.76 9.76 0 0 1-4.978-1.363l-.357-.212-4.583 1.109 1.127-4.462-.233-.367A9.76 9.76 0 0 1 6.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.799 4.396 9.799 9.8 0 5.403-4.396 9.8-9.799 9.8zm5.373-7.34c-.294-.147-1.741-.859-2.011-.957-.27-.099-.467-.147-.663.148-.196.294-.761.957-.933 1.153-.172.196-.343.221-.637.074-.294-.148-1.243-.458-2.367-1.462-.875-.78-1.466-1.744-1.638-2.038-.172-.294-.018-.453.13-.6.133-.133.294-.344.441-.516.147-.172.196-.294.294-.49.098-.196.049-.368-.025-.516-.074-.147-.663-1.6-.909-2.19-.24-.575-.484-.497-.663-.506l-.564-.01c-.196 0-.516.074-.786.368-.27.294-1.03 1.006-1.03 2.454 0 1.447 1.055 2.846 1.202 3.043.147.196 2.077 3.17 5.033 4.444.703.303 1.251.484 1.679.62.705.224 1.347.192 1.855.117.566-.085 1.741-.712 1.987-1.4.245-.688.245-1.278.172-1.4-.073-.123-.269-.196-.563-.343z"/></svg>
+        Escríbeme
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Piezas hechas a mano</p>
+        <h1>Manualidades<br>con carácter</h1>
+        <p class="hero-sub">Cada pieza se hace una a una, con materiales de calidad. Descubre el catálogo y pide la tuya directamente por WhatsApp.</p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+          <a class="btn btn-outline btn-whatsapp-outline" id="heroWhatsapp" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATÁLOGO ===================== -->
+  <section class="catalog" id="catalogo">
+    <div class="container">
+      <h2>Catálogo</h2>
+      <p class="section-sub">Toca "Me interesa" en cualquier pieza para preguntar por ella directamente por WhatsApp.</p>
+
+      <div class="filters" id="filters">
+        <button class="filter-chip active" data-cat="todas">Todas</button>
+      </div>
+
+      <div id="loadingMsg" class="loading-msg">Cargando piezas…</div>
+      <div id="errorMsg" class="error-msg" hidden>
+        No se ha podido cargar el catálogo ahora mismo. Prueba a recargar la página en unos segundos.
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section class="about" id="nosotros">
+    <div class="container about-inner">
+      <div class="about-image"></div>
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p>Creo piezas únicas hechas a mano, con materiales de calidad y atención en cada detalle. Cada creación es distinta — igual que la persona que la recibe.</p>
+        <p>¿Tienes una idea especial en mente? Escríbeme y hablamos sobre un encargo a medida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="contact" id="contacto">
+    <div class="container contact-inner">
+      <h2>¿Hablamos?</h2>
+      <p class="section-sub">La forma más rápida de contactar conmigo es por WhatsApp. Escríbeme y te respondo en cuanto pueda.</p>
+      <a class="btn btn-whatsapp btn-large" id="contactWhatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" class="icon-wa"><path fill="currentColor" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.697 4.61 1.902 6.484L4 29l7.72-1.868A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.8a9.76 9.76 0 0 1-4.978-1.363l-.357-.212-4.583 1.109 1.127-4.462-.233-.367A9.76 9.76 0 0 1 6.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.799 4.396 9.799 9.8 0 5.403-4.396 9.8-9.799 9.8zm5.373-7.34c-.294-.147-1.741-.859-2.011-.957-.27-.099-.467-.147-.663.148-.196.294-.761.957-.933 1.153-.172.196-.343.221-.637.074-.294-.148-1.243-.458-2.367-1.462-.875-.78-1.466-1.744-1.638-2.038-.172-.294-.018-.453.13-.6.133-.133.294-.344.441-.516.147-.172.196-.294.294-.49.098-.196.049-.368-.025-.516-.074-.147-.663-1.6-.909-2.19-.24-.575-.484-.497-.663-.506l-.564-.01c-.196 0-.516.074-.786.368-.27.294-1.03 1.006-1.03 2.454 0 1.447 1.055 2.846 1.202 3.043.147.196 2.077 3.17 5.033 4.444.703.303 1.251.484 1.679.62.705.224 1.347.192 1.855.117.566-.085 1.741-.712 1.987-1.4.245-.688.245-1.278.172-1.4-.073-.123-.269-.196-.563-.343z"/></svg>
+        Enviar WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span id="shopNameFooter">MOVALA</span> · Manualidades hechas a mano</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" id="floatingWhatsapp" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" class="icon-wa"><path fill="currentColor" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.697 4.61 1.902 6.484L4 29l7.72-1.868A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.8a9.76 9.76 0 0 1-4.978-1.363l-.357-.212-4.583 1.109 1.127-4.462-.233-.367A9.76 9.76 0 0 1 6.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.799 4.396 9.799 9.8 0 5.403-4.396 9.8-9.799 9.8zm5.373-7.34c-.294-.147-1.741-.859-2.011-.957-.27-.099-.467-.147-.663.148-.196.294-.761.957-.933 1.153-.172.196-.343.221-.637.074-.294-.148-1.243-.458-2.367-1.462-.875-.78-1.466-1.744-1.638-2.038-.172-.294-.018-.453.13-.6.133-.133.294-.344.441-.516.147-.172.196-.294.294-.49.098-.196.049-.368-.025-.516-.074-.147-.663-1.6-.909-2.19-.24-.575-.484-.497-.663-.506l-.564-.01c-.196 0-.516.074-.786.368-.27.294-1.03 1.006-1.03 2.454 0 1.447 1.055 2.846 1.202 3.043.147.196 2.077 3.17 5.033 4.444.703.303 1.251.484 1.679.62.705.224 1.347.192 1.855.117.566-.085 1.741-.712 1.987-1.4.245-.688.245-1.278.172-1.4-.073-.123-.269-.196-.563-.343z"/></svg>
+  </a>
+
+  <!-- Ficha de producto (modal) -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-body">
+        <p class="modal-cat" id="modalCat"></p>
+        <h3 id="modalName"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+        <a class="btn btn-whatsapp btn-large" id="modalWhatsapp" target="_blank" rel="noopener">Me interesa · Preguntar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
